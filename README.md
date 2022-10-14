@@ -1,5 +1,7 @@
 # dotfiles
 
+**WARNING:** Don't blindly use my settings unless you know what you are doing. Use at your own risk!
+
 ## Contents
 
 - sublime
