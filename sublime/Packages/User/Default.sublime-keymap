@@ -1,0 +1,10 @@
+{
+     "keys": [
+         "ctrl+super+l"
+     ],
+     "command": "black",
+     "args": {
+        // "use_selection": true
+        "line_length": 79,
+     }
+}

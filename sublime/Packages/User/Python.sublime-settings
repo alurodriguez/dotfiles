@@ -1,6 +1,11 @@
 // These settings override both User and Default settings for the Python syntax
 {
+	// editor options
 	"draw_white_space": ["all"],
+
+	// tabs and whitespace
 	"rulers": [79],
+	// "word_wrap": true,
+	// "wrap_width": 80,
 	// "isort.sort_on_save": true,
 }
