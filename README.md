@@ -1,15 +1,26 @@
-# dotfiles
+# Welcome to my dotfiles!
 
-**WARNING:** Don't blindly use my settings unless you know what you are doing. Use at your own risk!
+### To install and follow along
+```
+sudo apt install stow
+```
+On Mac
+```
+brew install stow
+```
 
-## Contents
+### Installing on a fresh machine
+1. Clone the repo and `cd` in there. 
+```
+git clone https://github.com/alurodriguez/dotfiles.git
+cd dotfiles
+```
 
-- sublime
-- tmux
-- atom
-- vim
-
-## Finishing touches
-
-1. open `tmux` and install plugins: `Ctrl+a I`
-2. to restore atom packages run: `apm install --packages-file ~/dotfiles/atom/package.list`
+2. For each package in the repo you want symlinked, run `stow <package>`.
+```
+stow zsh
+stow scripts
+stow alacritty
+stow tmux
+stow nvim
+```
