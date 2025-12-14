@@ -1,0 +1,34 @@
+[core]
+	editor = nvim
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+[alias]
+	d = diff
+	co = checkout
+	ci = commit
+	ca = commit -a
+	ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
+	pl = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
+	st = status
+	br = branch
+	ba = branch -a
+	bm = branch --merged
+	bn = branch --no-merged
+	hist = log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all
+  ; hi = log --pretty=format:\"%C(yellow)%hCreset %Cblue%cn%Creset %s %C(auto)%d%Creset\" --graph --decorate --all
+	open = "!hub browse"
+	type = cat-file -t
+	dump = cat-file -p
+	unstage = restore --staged .
+	; dog = log --oneline --all --graph
+	dog = "!git --no-pager log --oneline --graph --all"
+	lo = "!git --no-pager log --oneline --graph --all"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[mergetool]
+	keepBackup = false
+[init]
+	defaultBranch = master
